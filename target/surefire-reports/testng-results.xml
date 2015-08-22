@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Tests" duration-ms="10447" started-at="2015-08-22T21:42:54Z" finished-at="2015-08-22T21:43:05Z">
+    <groups>
+    </groups>
+    <test name="Test1" duration-ms="10447" started-at="2015-08-22T21:42:54Z" finished-at="2015-08-22T21:43:05Z">
+      <class name="epol.present.selenium.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:epol.present.selenium.LoginTest@39ba5a14]" name="init" is-config="true" duration-ms="4805" started-at="2015-08-23T00:42:54Z" finished-at="2015-08-23T00:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testUntitled()[pri:0, instance:epol.present.selenium.LoginTest@39ba5a14]" name="testUntitled" duration-ms="5621" started-at="2015-08-23T00:42:59Z" finished-at="2015-08-23T00:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUntitled -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:epol.present.selenium.LoginTest@39ba5a14]" name="tearDown" is-config="true" duration-ms="616" started-at="2015-08-23T00:43:05Z" finished-at="2015-08-23T00:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- epol.present.selenium.LoginTest -->
+    </test> <!-- Test1 -->
+  </suite> <!-- Tests -->
+</testng-results>

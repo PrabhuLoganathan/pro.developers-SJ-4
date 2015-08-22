@@ -4,7 +4,7 @@
 	<test name="Test1">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="epol.present.selenium.HomePageTest"/>
+		    <class name="epol.present.selenium.LoginTest"/>
 		</classes>
 	</test>  
 </suite>
