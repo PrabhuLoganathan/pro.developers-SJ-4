@@ -10,19 +10,15 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class LoginTest extends epol.present.selenium.TestBase {
+public class LogoutTest extends epol.present.selenium.TestBase {
   private boolean acceptNextAlert = true;
   private StringBuffer verificationErrors = new StringBuffer();
 
   @Test
-  public void LoginTest_method() throws Exception {
+  public void testLogout() throws Exception {
     driver.get(baseUrl + "/");
-    driver.findElement(By.id("log")).clear();
-    driver.findElement(By.id("log")).sendKeys("admin");
-    driver.findElement(By.id("pwd")).clear();
-    driver.findElement(By.id("pwd")).sendKeys("ghjcnjq231289");
-    driver.findElement(By.name("submit")).click();
-    assertTrue(isElementPresent(By.linkText("Log out")));
+    driver.findElement(By.linkText("Log out")).click();
+    assertTrue(isElementPresent(By.xpath("//a[contains(text(),'Lost your password?')]")));
   }
 
   private boolean isElementPresent(By by) {

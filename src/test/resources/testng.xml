@@ -5,6 +5,7 @@
 		<parameter name="path" value="/"/>
 		<classes>
 		    <class name="epol.present.selenium.LoginTest"/>
+		    <class name="epol.present.selenium.LogoutTest"/>
 		</classes>
 	</test>  
 </suite>
