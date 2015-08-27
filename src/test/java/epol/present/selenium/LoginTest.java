@@ -19,7 +19,7 @@ public class LoginTest extends epol.present.selenium.TestBase {
 
   @Test
   public void LoginTest_method() throws Exception {
-	    driver.get(baseUrl + "/console/login/LoginForm.jsp");
+	    driver.get(baseUrl + "login/LoginForm.jsp");
 	    driver.findElement(By.id("j_username")).clear();
 	    driver.findElement(By.id("j_username")).sendKeys("weblogic");
 	    driver.findElement(By.id("j_password")).clear();

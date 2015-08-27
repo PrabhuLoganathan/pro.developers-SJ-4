@@ -19,7 +19,7 @@ public class LogoutTest extends epol.present.selenium.TestBase {
 
   @Test
   public void testLogout() throws Exception {
-	    driver.get(baseUrl + "/");
+	    driver.get(baseUrl + "");
 	    driver.findElement(By.linkText("Log Out")).click();
 	    assertTrue(isElementPresent(By.xpath("//input[@value='Log In']")));
   }
