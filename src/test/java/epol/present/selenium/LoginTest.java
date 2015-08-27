@@ -2,10 +2,13 @@ package epol.present.selenium;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
 import org.testng.*;
 import org.testng.annotations.*;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -16,13 +19,13 @@ public class LoginTest extends epol.present.selenium.TestBase {
 
   @Test
   public void LoginTest_method() throws Exception {
-    driver.get(baseUrl + "/");
-    driver.findElement(By.id("log")).clear();
-    driver.findElement(By.id("log")).sendKeys("admin");
-    driver.findElement(By.id("pwd")).clear();
-    driver.findElement(By.id("pwd")).sendKeys("ghjcnjq231289");
-    driver.findElement(By.name("submit")).click();
-    assertTrue(isElementPresent(By.linkText("Log out")));
+	    driver.get(baseUrl + "/console/login/LoginForm.jsp");
+	    driver.findElement(By.id("j_username")).clear();
+	    driver.findElement(By.id("j_username")).sendKeys("weblogic");
+	    driver.findElement(By.id("j_password")).clear();
+	    driver.findElement(By.id("j_password")).sendKeys("welcome1");
+	    driver.findElement(By.cssSelector("input.formButton")).click();
+	    assertTrue(isElementPresent(By.xpath("//div[@id='welcome']/p")));
   }
 
   private boolean isElementPresent(By by) {

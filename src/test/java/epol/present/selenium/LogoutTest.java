@@ -2,10 +2,13 @@ package epol.present.selenium;
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
 import org.testng.*;
 import org.testng.annotations.*;
+
 import static org.junit.Assert.*;
 import static org.hamcrest.CoreMatchers.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -16,9 +19,9 @@ public class LogoutTest extends epol.present.selenium.TestBase {
 
   @Test
   public void testLogout() throws Exception {
-    driver.get(baseUrl + "/");
-    driver.findElement(By.linkText("Log out")).click();
-    assertTrue(isElementPresent(By.xpath("//a[contains(text(),'Lost your password?')]")));
+	    driver.get(baseUrl + "/");
+	    driver.findElement(By.linkText("Log Out")).click();
+	    assertTrue(isElementPresent(By.xpath("//input[@value='Log In']")));
   }
 
   private boolean isElementPresent(By by) {
